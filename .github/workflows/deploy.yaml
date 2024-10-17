@@ -12,7 +12,12 @@ permissions:
 jobs:
     deployToAzure:
         runs-on: ubuntu-latest
-    
+        env:
+            ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+            ARM_SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTION_ID }}
+            ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+            ARM_USE_OIDC: true
+            
         steps:
         - name: Checkout repository
           uses: actions/checkout@v2
