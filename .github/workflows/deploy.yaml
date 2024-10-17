@@ -42,10 +42,10 @@ jobs:
             -backend-config="resource_group_name=tfstate-rg2" \
             -backend-config="storage_account_name=tfstatewai2" \
             -backend-config="container_name=anuworkshop" \
-            -backend-config="key=dev"
+            -backend-config="key=dev1"
         
         - name: Terraform Apply
-          run: terraform apply -auto-approve -var="env=dev"
+          run: terraform apply -auto-approve -var="env=dev1"
 
     planProdRelease:
         runs-on: ubuntu-latest
