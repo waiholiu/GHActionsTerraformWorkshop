@@ -3,7 +3,7 @@ terraform {
     resource_group_name = "tfstate-rg2"
     storage_account_name = "tfstatewai2"
     container_name = "anuworkshop"
-    key = "wailocal"
+    key = var.key
   }
 }
 
