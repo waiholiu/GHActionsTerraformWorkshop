@@ -54,7 +54,7 @@ jobs:
           ARM_SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTION_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
           ARM_USE_OIDC: true
-    
+        needs: deployToDev
         steps:
         - name: Checkout code
           uses: actions/checkout@v2
@@ -89,7 +89,7 @@ jobs:
             ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
             ARM_USE_OIDC: true
             name: prod-env
-        needs: deployToDev
+        needs: planProdRelease
         environment:
             name: prod-env
           
