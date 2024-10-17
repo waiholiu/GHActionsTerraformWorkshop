@@ -1,9 +1,9 @@
 terraform {
   backend "azurerm" {
-    resource_group_name = ""
-    storage_account_name = ""
-    container_name = ""
-    key = ""
+    resource_group_name = "tfstate-rg2"
+    storage_account_name = "tfstatewai2"
+    container_name = "anuworkshop"
+    key = "wailocal"
   }
 }
 
