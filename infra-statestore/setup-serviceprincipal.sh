@@ -3,10 +3,10 @@
 
 
 # Define variable for display name
-DISPLAY_NAME="workshop-dev-env-oidc"
+DISPLAY_NAME="workshop-prod-env-oidc"
 # Define variables for name and subject
-FEDERATED_IDENTITY_NAME="workshop-dev-env-federated-identity"
-FEDERATED_IDENTITY_SUBJECT="repo:waiholiu/GHActionsTerraformWorkshop:environment:dev-env"
+FEDERATED_IDENTITY_NAME="workshop-prod-env-federated-identity"
+FEDERATED_IDENTITY_SUBJECT="repo:waiholiu/GHActionsTerraformWorkshop:environment:prod-env"
 
 
 
