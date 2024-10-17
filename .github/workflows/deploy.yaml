@@ -17,6 +17,7 @@ jobs:
             ARM_SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTION_ID }}
             ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
             ARM_USE_OIDC: true
+            name: dev-env
             
         steps:
         - name: Checkout repository
@@ -51,6 +52,7 @@ jobs:
             ARM_SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTION_ID }}
             ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
             ARM_USE_OIDC: true
+            name: prod-env
         needs: deployToDev
           
         steps:
